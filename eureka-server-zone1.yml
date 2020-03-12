@@ -1,0 +1,14 @@
+server:
+  port: ${PORT:8761}
+
+eureka:
+  instance:
+    hostname: localhost1
+    metadata-map:
+      zone: zone1
+  client:
+    service-url:
+      defaultZone: http://localhost2:8762/eureka/,http://localhost3:8763/eureka/
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 10000      # 【逐出间隔计时器（毫秒）】  
