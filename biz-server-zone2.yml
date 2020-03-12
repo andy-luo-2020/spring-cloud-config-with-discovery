@@ -1,0 +1,10 @@
+server:
+  port: ${PORT:8082}  
+  
+eureka:
+  instance:
+    metadata-map:
+      zone: zone2
+  client:
+    service-url:
+      defaultZone: http://localhost2:8762/eureka/,http://localhost1:8761/eureka/,http://localhost3:8763/eureka/
