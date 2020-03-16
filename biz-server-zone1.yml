@@ -10,3 +10,11 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost1:8761/eureka/,http://localhost2:8762/eureka/,http://localhost3:8763/eureka/
+      
+customize:
+  string:
+    property: andy-luo
+  int:
+    property: 28 
+
+    
