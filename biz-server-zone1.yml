@@ -10,7 +10,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost1:8761/eureka/,http://localhost2:8762/eureka/,http://localhost3:8763/eureka/
-      
+ 
+#自定义的属性 
 customize:
   string:
     property: andy-luo
